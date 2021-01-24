@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+
+	#container
+	{
+	width:100%;
+	height:500px;
+	border:1px solid black;
+    background-image:url(images/sunrise-background.jpg);
+    background-size:100% 100%; 
+    }
+        
+        #img #i1
+        {
+        transform:translate(10px,500px);
+        animation:Ram 3s 1;
+        animation-fill-mode: forwards;
+        animation-delay:5s; 
+        }
+
+        @keyframes Ram
+        {
+        from{transform:translate(10px,500px);}
+        to{transform:translate(50px,90px);}
+        }
+        
+        #img #i2
+        {
+        transform:translate(240px,-425px);
+        animation:ball 3.9s 1;
+        animation-delay:7s;
+        opacity:0;
+        position: relative;
+        z-index:1;
+        }
+
+        @keyframes ball
+        {
+        0%{transform:translate(240px,-425px);opacity:0;}
+        50%{transform:translate(240px,-425px);opacity:1;}
+        100%{transform:translate(700px,-500px);opacity:1;}
+        }
+
+        #img #i3
+        {
+         transform:translate(620px,-400px);
+         animation:Ravan 3s 1;
+         z-index: 0;
+         position: relative;
+         animation-fill-mode:forwards;
+         }
+
+        @keyframes Ravan
+        {
+        0%{transform:translate(620px,-400px);}
+        100%{transform:translate(620px,-770px);}
+        }
+
+        #img #i3 img
+        {
+        opacity: 1;
+        animation: ravan 2s 1;
+        animation-fill-mode: forwards;
+        animation-delay: 14s;
+        }
+        @keyframes ravan
+        {
+        from{opacity:1;}
+        to{opacity:0;}
+        }
+
+        #img #i4
+        {
+         transform:translate(640px,-1300px);
+         animation:fire 3s infinite;
+         animation-delay: 10s;
+         opacity:0;
+        }
+        @keyframes fire
+        {
+        from{transform:translate(640px,-1300px);opacity:0;}
+        to{transform:translate(640px,-1300px);opacity:1;}
+        }
+        
+        
+</style>
+</head>
+<body>
+<div id="container">
+
+<div id="img">	
+<div id="i1"><img src="images/Lord-Rama-Transparent.png" width="300px" height="550px"></div>	
+<div id="i2"><img src="images/Fireball-Transparent-PNG.png" width="200px" height="200px"></div>	
+<div id="i3"><img src="images/ravan.png" width="400px" height="550px"></div>	
+<div id="i4"><img src="images/5GpM.gif" width="300px" height="550px"></div>	
+</div><!--end of img-->
+
+</div><!--end od container-->
+</body>
+</html>
